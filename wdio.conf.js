@@ -1,4 +1,3 @@
-// let { join } = require('path');
 exports.config = {
     specs: [
         './test/specs/**/*.js'
@@ -25,12 +24,11 @@ exports.config = {
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000,
-        // require: ['@babel/register'],
     },
     // before: async function (capabilities, specs) {
     //     await browser.url('http://localhost:4723/wd/hub')
     // },
-    // after: async function (result, capabilities, specs) {
-    //     await browser.reloadSession()
-    // },
+    after: async function (result, capabilities, specs) {
+        await browser.reloadSession()
+    },
 }
