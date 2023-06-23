@@ -28,7 +28,7 @@ exports.config = {
     // before: async function (capabilities, specs) {
     //     await browser.url('http://localhost:4723/wd/hub')
     // },
-    after: async function (result, capabilities, specs) {
-        await browser.reloadSession()
-    },
+    // after: async function (result, capabilities, specs) {
+    //     await browser.reloadSession()
+    // },
 }

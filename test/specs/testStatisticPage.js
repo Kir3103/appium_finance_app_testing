@@ -1,7 +1,6 @@
 import { assert } from 'chai';
 import HomePage from '../../page/HomePage.js';
 import StatisticPage from '../../page/StatisticPage.js';
-import testData from '../../utils/testData.js';
 
 describe('Test Statistic page', function (){
 
@@ -10,5 +9,6 @@ describe('Test Statistic page', function (){
         await HomePage.isPageOpen();
         await HomePage.clickOnStatisticBtn();
         assert.isTrue(await StatisticPage.isPageOpen(), 'Statistic page is not opened');
+        await browser.pause(3000);
     });
 });
