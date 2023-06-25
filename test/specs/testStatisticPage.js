@@ -9,6 +9,5 @@ describe('Test Statistic page', function (){
         await HomePage.isPageOpen();
         await HomePage.clickOnStatisticBtn();
         assert.isTrue(await StatisticPage.isPageOpen(), 'Statistic page is not opened');
-        await browser.pause(3000);
     });
 });

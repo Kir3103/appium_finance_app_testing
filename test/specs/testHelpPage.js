@@ -9,6 +9,5 @@ describe('Test Help page', function (){
         await HomePage.isPageOpen();
         await HomePage.clickOnHelpBtn();
         assert.isTrue(await HelpPage.isPageOpen(), 'Help page is not opened');
-        await browser.pause(3000);
     });
 });

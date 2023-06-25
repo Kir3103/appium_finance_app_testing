@@ -9,6 +9,5 @@ describe('Test Setting page', function (){
         await HomePage.isPageOpen();
         await HomePage.clickOnSettingBtn();
         assert.isTrue(await SettingPage.isPageOpen(), 'Setting page is not opened');
-        await browser.pause(3000);
     });
 });

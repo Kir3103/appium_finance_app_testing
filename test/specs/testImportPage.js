@@ -9,6 +9,5 @@ describe('Test Import/Export page', function (){
         await HomePage.isPageOpen();
         await HomePage.clickOnImportBtn();
         assert.isTrue(await ImportPage.isPageOpen(), 'Import page is not opened');
-        await browser.pause(3000);
     });
 });
